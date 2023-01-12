@@ -62,6 +62,35 @@ span {
 }
 
 /*
+    CART
+*/
+
+.cart {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: var(--bg-color--);
+    box-shadow: -2px - 4px black;
+    background-color: rgb(0, 0, 0);
+    border-left: 2px solid whitesmoke;
+    padding: 20px;
+}
+
+#cart-title {
+    font-family: jetbrains mono;
+}
+
+#advertisement {
+    width: auto;
+    height: 210px;
+    background-color: whitesmoke;
+}
+
+/*
     MAIN
 */
 
@@ -82,14 +111,24 @@ span {
     display: inline-block;
     text-decoration: none;
     color : whitesmoke;
-    font-size : 25px;
-    font-weight: 1000;
+    font-size : 22px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+#burger-price {
+    text-decoration: none;
+    position: relative;
+    bottom: 20px;
+    color : whitesmoke;
+    font-weight: 700;
+    font-size : 22px;
     margin-right: 20px;
 }
 
 #burger-desc-super-parent {
-    position: absolute;
-    left: 37vw; top: 21vh;
+    position: relative;
+    left: 55vw; top: -1vh;
 }
 
 #burger-img-super-parent {
@@ -113,6 +152,58 @@ span {
 
 #back-to-home {
     color: rgb(81, 81, 81);
+}
+
+/*
+    SIZE RADIO
+*/
+
+.size-desc {
+    font-family : jetbrains mono;
+    color: whitesmoke;
+    display: flex;
+    font-size: 18px;
+    position: relative;
+    justify-content: center;
+    top: 8px;
+}
+
+input[type="radio"] {
+    display : none
+   
+}
+
+.container {
+    border : 2px solid whitesmoke;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin-right: 7px;
+    overflow: hidden;
+}
+
+input:checked + label {
+    background-color: rgb(43, 43, 43);
+}
+
+#label1, #label2, #label3, #label4 {
+    display : block;
+    width: 40px;
+    height: 40px;
+    background-size : 40px 40px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#container-super-parent {
+    position: absolute;
+    left: 55vw; top: 41vh;
+}
+
+#size-text {
+    position: absolute;
+    left: 55vw; top: 36vh;
+    font-size: 20px;
 }
 
 /*
