@@ -186,7 +186,7 @@ span {
     top: 20%;
 }
 
-#donut-ad {
+#fries-ad {
     width: 140px;
     height: 140px;
 }
@@ -225,7 +225,7 @@ span {
     display: inline-block;
 }
 
-.burger-desc-parent {
+.pizza-desc-parent {
     display: inline-block;
     text-decoration: none;
     color : whitesmoke;
@@ -234,7 +234,7 @@ span {
     margin-right: 20px;
 }
 
-#burger-price {
+#pizza-price {
     text-decoration: none;
     position: relative;
     bottom: 20px;
@@ -244,19 +244,19 @@ span {
     margin-right: 20px;
 }
 
-#burger-desc-super-parent {
+#pizza-desc-super-parent {
     position: relative;
     left: 55vw; top: -1vh;
 }
 
-#burger-img-super-parent {
+#pizza-img-super-parent {
     position: absolute;
-    left: 15vw; top: 28vh;
+    left: 15vw; top: 33vh;
 }
 
-#burger-img {
-    width: 400px;
-    height: 400px;
+#pizza-img {
+    width: 300px;
+    height: 300px;
 }
 
 #product-header-super-parent {

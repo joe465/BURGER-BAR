@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PLACE ORDER</title>
-    <link rel="stylesheet" href="./style/order.css">
+    <link rel="stylesheet" href="./style/donut.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
 </head>
 <body>
     <header>
@@ -22,7 +23,7 @@
                 </div>
                 <div class="nav-layout">
                     <div>
-                        <a href="#CART" class="navtop" id="cart">
+                        <a href="#CART" class="navtop" id="cart-button">
                             <p class="cart-child">CART</p>
                             <img src="./resources/PNG/Paperbag.png" alt="paperbag"  class="cart-child" id="paperbag">
                         </a>
@@ -31,9 +32,158 @@
                 </div>
             </div>
         </div>
+         <!-- Cart -->
+         <div class="cart">
+            <!-- Cart Title-->
+            <h2 id="cart-title" style="color: whitesmoke;">SHOPPING CART</h2>
+            <!-- Cart Close -->
+            <i class='bx bx-x' id="close-cart"></i>
+
+            <!-- Cart Content-->
+            <div id="advertisement">
+                <div id="ad-img-parent" class="ad">
+                    <img src="./resources/PNG/Burger.png" alt="donut" id="donut-ad">
+                </div>
+                <div id="ad-desc-parent" class="ad">
+                    <p class="ad-desc">
+                        ADD BURGER TO YOUR CART!
+                    </p>
+                    <p class="ad-desc">
+                        RP. 40.000
+                    </p>
+                </div>
+                <form action="">
+                    <button id="ad-add-cart">
+                        ADD TO CART
+                    </button>
+                </form>
+            </div>
+            <div>
+                <div>
+                    <div class="main">
+                        <img src="./resources/PNG/Donut.png" alt="" id="xxx">
+                    </div>
+                    <div class="main">
+                        <h2 id="cart-product-name">
+                            <p>
+                                DONUT
+                            </p>
+                        </h2>
+                        <div class="adding">
+                            + ICING
+                        </div>  
+                        <div class="adding">
+                            + SPRINGKLE
+                        </div>
+                        <div class="adding">
+                            + X
+                        </div>
+                        <div class="adding">
+                            + X
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="quantity-btn-parent">
+                <input type="number" value="1" class="button">
+            </div>
+            <div>
+                <hr style="line-height: 2px;">
+            </div>
+            <div>
+                <span>SUBTOTAL : </span>
+                <span id="total-price">RP. 20.000</span>
+            </div>
+            <div>
+                <button id="check-out-button">
+                    <span class="check-out-txt">
+                        CHECK OUT
+                    </span>
+                    <span class="check-out-txt">
+                        <i class='bx bxs-right-arrow-alt'></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+
     </header>
     <main>
-       
+        <main>
+            <div id="product-header-super-parent" class="super-parent">
+                <div class="product-header-parent">
+                    <a href="./index.html">
+                        <p id="back-to-home">HOME</p>
+                    </a>
+                </div>
+                <div class="product-header-parent">
+                    <span id="devider-1">
+                        /
+                    </span>
+                </div>
+                <div class="product-header-parent">
+                    <p id="product-name">
+                        DONUT
+                    </p>
+                </div>
+            </div>
+            <div id="donut-img-super-parent">
+                <img src="./resources/PNG/Donut.png" alt="1-1-1-1" id="donut-img">
+            </div>
+            <div id="donut-desc-super-parent" class="super-parent">
+                <div class="donut-desc-parent">
+                    <p id="desc">
+                        DONUT
+                    </p>
+                </div>
+                <div class="donut-desc-parent">
+                    <span>
+                        |
+                    </span>
+                </div>
+                <div class="donut-desc-parent">
+                    <span>
+                        REGULAR
+                    </span>
+                </div>
+                <div id="donut-price-parent">
+                    <span id="donut-price">
+                        RP. 40.000
+                    </span>
+                </div>
+            </div>
+            <div>
+                <span id="size-text">
+                    SIZE
+                </span>
+            </div>
+            <div id="container-super-parent">
+                <div class="container">
+                    <input type="radio" name="radio" id="opt1">
+                    <label for="opt1" id="label1">
+                        <span class="size-desc">S</span>
+                    </label>
+                </div>
+                <div class="container">
+                    <input type="radio" name="radio" id="opt2">
+                    <label for="opt2" id="label2">
+                        <span class="size-desc">M</span>
+                    </label>
+                </div>
+                <div class="container">
+                    <input type="radio" name="radio" id="opt3">
+                    <label for="opt3" id="label3">
+                        <span class="size-desc">L</span>
+                    </label>
+                </div>
+                <div class="container">
+                    <input type="radio" name="radio" id="opt4">
+                    <label for="opt4" id="label4">
+                        <span class="size-desc">XL</span>
+                    </label>
+                </div>
+            </div>
+        </main>
+    
     </main>
     <footer>
         <footer>
@@ -92,5 +242,9 @@
             </div>
         </footer>
     </footer>
+     <!-- Link to Js file -->
+     <script src="./script/main.js">
+
+     </script>
 </body>
 </html>

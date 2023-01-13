@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PLACE ORDER</title>
     <link rel="stylesheet" href="./style/order.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
 </head>
 <body>
     <header>
@@ -22,7 +23,7 @@
                 </div>
                 <div class="nav-layout">
                     <div>
-                        <a href="#CART" class="navtop" id="cart">
+                        <a class="navtop" id="cart-button">
                             <p class="cart-child">CART</p>
                             <img src="./resources/PNG/Paperbag.png" alt="paperbag"  class="cart-child" id="paperbag">
                         </a>
@@ -30,14 +31,78 @@
                 </div>
             </div>
         </div>
-        <!-- Cart -->
+      
+       <!-- Cart -->
         <div class="cart">
             <!-- Cart Title-->
             <h2 id="cart-title" style="color: whitesmoke;">SHOPPING CART</h2>
+            <!-- Cart Close -->
+            <i class='bx bx-x' id="close-cart"></i>
 
             <!-- Cart Content-->
             <div id="advertisement">
-                
+                <div id="ad-img-parent" class="ad">
+                    <img src="./resources/PNG/Donut.png" alt="donut" id="donut-ad">
+                </div>
+                <div id="ad-desc-parent" class="ad">
+                    <p class="ad-desc">
+                        ADD DONUT TO YOUR CART!
+                    </p>
+                    <p class="ad-desc">
+                        RP. 20.000
+                    </p>
+                </div>
+                <form action="">
+                    <button id="ad-add-cart">
+                        ADD TO CART
+                    </button>
+                </form>
+            </div>
+            <div>
+                <div>
+                    <div class="main">
+                        <img src="./resources/Burger/Group-1/1-1-1-1-G1.png" alt="" id="xxx">
+                    </div>
+                    <div class="main">
+                        <h2 id="cart-product-name">
+                            <p>
+                                BEEF BURGER
+                            </p>
+                        </h2>
+                        <div class="adding">
+                            + LETTUCE
+                        </div>  
+                        <div class="adding">
+                            + TOMATO
+                        </div>
+                        <div class="adding">
+                            + CHEESE
+                        </div>
+                        <div class="adding">
+                            + PATTY
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="quantity-btn-parent">
+                <input type="number" value="1" class="button">
+            </div>
+            <div>
+                <hr style="line-height: 2px;">
+            </div>
+            <div>
+                <span>SUBTOTAL : </span>
+                <span id="total-price">RP. 40.000</span>
+            </div>
+            <div>
+                <button id="check-out-button">
+                    <span class="check-out-txt">
+                        CHECK OUT
+                    </span>
+                    <span class="check-out-txt">
+                        <i class='bx bxs-right-arrow-alt'></i>
+                    </span>
+                </button>
             </div>
         </div>
     </header>
@@ -173,5 +238,10 @@
             </div>
         </footer>
     </footer>
+
+    <!-- Link to Js file -->
+    <script src="./script/main.js">
+
+    </script>
 </body>
 </html>

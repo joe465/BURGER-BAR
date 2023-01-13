@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PLACE ORDER</title>
-    <link rel="stylesheet" href="./style/order.css">
+    <link rel="stylesheet" href="./style/pizza.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
 </head>
 <body>
     <header>
@@ -22,7 +23,7 @@
                 </div>
                 <div class="nav-layout">
                     <div>
-                        <a href="#CART" class="navtop" id="cart">
+                        <a href="#CART" class="navtop" id="cart-button">
                             <p class="cart-child">CART</p>
                             <img src="./resources/PNG/Paperbag.png" alt="paperbag"  class="cart-child" id="paperbag">
                         </a>
@@ -31,9 +32,156 @@
                 </div>
             </div>
         </div>
+               <!-- Cart -->
+               <div class="cart">
+                <!-- Cart Title-->
+                <h2 id="cart-title" style="color: whitesmoke;">SHOPPING CART</h2>
+                <!-- Cart Close -->
+                <i class='bx bx-x' id="close-cart"></i>
+    
+                <!-- Cart Content-->
+                <div id="advertisement">
+                    <div id="ad-img-parent" class="ad">
+                        <img src="./resources/PNG/French_Fries.png" alt="donut" id="fries-ad">
+                    </div>
+                    <div id="ad-desc-parent" class="ad">
+                        <p class="ad-desc">
+                            ADD FRIES TO YOUR CART!
+                        </p>
+                        <p class="ad-desc">
+                            RP. 30.000
+                        </p>
+                    </div>
+                    <form action="">
+                        <button id="ad-add-cart">
+                            ADD TO CART
+                        </button>
+                    </form>
+                </div>
+                <div>
+                    <div>
+                        <div class="main">
+                            <img src="./resources/PNG/Pizza.png" alt="" id="xxx">
+                        </div>
+                        <div class="main">
+                            <h2 id="cart-product-name">
+                                <p>
+                                    PIZZA
+                                </p>
+                            </h2>
+                            <div class="adding">
+                                + PAPPERONI
+                            </div>  
+                            <div class="adding">
+                                + TOMATO SAUCE
+                            </div>
+                            <div class="adding">
+                                + CHEESE
+                            </div>
+                            <div class="adding">
+                                + PINEAPPLE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="quantity-btn-parent">
+                    <input type="number" value="1" class="button">
+                </div>
+                <div>
+                    <hr style="line-height: 2px;">
+                </div>
+                <div>
+                    <span>SUBTOTAL : </span>
+                    <span id="total-price">RP. 50.000</span>
+                </div>
+                <div>
+                    <button id="check-out-button">
+                        <span class="check-out-txt">
+                            CHECK OUT
+                        </span>
+                        <span class="check-out-txt">
+                            <i class='bx bxs-right-arrow-alt'></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+    
     </header>
     <main>
-       
+        <div id="product-header-super-parent" class="super-parent">
+            <div class="product-header-parent">
+                <a href="./index.html">
+                    <p id="back-to-home">HOME</p>
+                </a>
+            </div>
+            <div class="product-header-parent">
+                <span id="devider-1">
+                    /
+                </span>
+            </div>
+            <div class="product-header-parent">
+                <p id="product-name">
+                    PIZAA
+                </p>
+            </div>
+        </div>
+        <div id="pizza-img-super-parent">
+            <img src="./resources/PNG/Pizza.png" alt="1-1-1-1" id="pizza-img">
+        </div>
+        <div id="pizza-desc-super-parent" class="super-parent">
+            <div class="pizza-desc-parent">
+                <p id="desc">
+                    PIZAA
+                </p>
+            </div>
+            <div class="pizza-desc-parent">
+                <span>
+                    |
+                </span>
+            </div>
+            <div class="pizza-desc-parent">
+                <span>
+                    REGULAR
+                </span>
+            </div>
+            <div id="pizza-price-parent">
+                <span id="pizza-price">
+                    RP. 50.000
+                </span>
+            </div>
+        </div>
+        <div>
+            <span id="size-text">
+                SIZE
+            </span>
+        </div>
+        <div id="container-super-parent">
+            <div class="container">
+                <input type="radio" name="radio" id="opt1">
+                <label for="opt1" id="label1">
+                    <span class="size-desc">S</span>
+                </label>
+            </div>
+            <div class="container">
+                <input type="radio" name="radio" id="opt2">
+                <label for="opt2" id="label2">
+                    <span class="size-desc">M</span>
+                </label>
+            </div>
+            <div class="container">
+                <input type="radio" name="radio" id="opt3">
+                <label for="opt3" id="label3">
+                    <span class="size-desc">L</span>
+                </label>
+            </div>
+            <div class="container">
+                <input type="radio" name="radio" id="opt4">
+                <label for="opt4" id="label4">
+                    <span class="size-desc">XL</span>
+                </label>
+            </div>
+        </div>
+
     </main>
     <footer>
         <footer>
@@ -92,5 +240,9 @@
             </div>
         </footer>
     </footer>
+     <!-- Link to Js file -->
+     <script src="./script/main.js">
+
+     </script>
 </body>
 </html>
